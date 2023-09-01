@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat tabel</title>
+</head>
+<body>
+    <h1>Membuat tabel</h1>
+    <!--
+        format:
+            <table>
+                <tr>
+                    <td>konten 1</td>
+                    <td>konten 2</td>
+                </tr>
+        
+            tr -> membuat baris
+            td -> membuat kolom
+            th -> membuat kolom judul di tabel tebal dan rata tengah
+
+            Manipulasi cell:
+            coslspan -> merge kolom (samping)
+            rowspan -> merge baris (bawah)
+    -->
+
+    <table border="1" cellpadding="5" cellspacing="0">
+        <tr>
+            <th rowspan="2">No.</th>
+            <th colspan="2">Nama</th>
+            <th rowspan="2">Alamat</th>
+        </tr>
+
+        <tr>
+            <th>Depan</th>
+            <th>Belakang</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>Akbar</td>
+            <td>Wisesa</td>
+            <td>Lamongan</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>Nigatoro</td>
+            <td>Chadiago</td>
+            <td>Kranji</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>Rich Chigga</td>
+            <td>Megawati</td>
+            <td>Ohio</td>
+        </tr>
+    </table>
+</body>
+</html>

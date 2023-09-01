@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // dengan cara literal
+
+        // pola ==> flag 
+        // let namavariabel = /pola/flag
+
+        // flag: 
+            // g ==> global
+            // i ==> case insensitive ==> mengabaikan / tidak peduli huruf besar / kecil
+
+        let pola = /JavaScript/;
+        let pola2 = /belajAr/i; 
+        console.log(typeof pola);
+
+        let kalimat = 'Belajar JavaScript';
+        let kalimat2 = 'bElajAR Javascript';
+
+    
+        console.log(pola.test(kalimat));
+        console.log(pola.test(kalimat2));
+        console.log(pola2.test(kalimat));
+        console.log(pola2.test(kalimat2));
+
+
+    </script>
+</body>
+</html>

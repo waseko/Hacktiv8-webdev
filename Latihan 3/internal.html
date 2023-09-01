@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penulisan JS Internal</title>
+
+    <!--
+        Internal javascript bisa di dalam tag head atau body
+    -->
+    <script src="latihan.js"></script>
+    <script>
+        /*
+        console.log->menampilkan/mencetak tulisan ke dalam sonsole browser (Dev Tools)
+        
+        alert => menampilpkan pop up 
+        document.write atau document.writeIn ==> menampilkan tulisan ke browser
+        */
+
+        console.log("Halo from javascript di tag head");
+    </script>
+</head>
+<body>
+    Ini ditulis di HTML
+    <script>
+        console.log("Halo dari tag body..");
+
+        alert("Halo dari Akbar");
+
+        document.write("Ini ditulis di JS");
+    </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .kotak {
+            height: 100px;
+            width: 100px;
+            padding: 30px;
+            margin-bottom: 10px;
+        }
+
+        .btn-delete {
+            background-color: #cb0000;
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <button onclick="tambahKotak();">Tambah Kotak</button>
+
+    <script>    
+        let h1 = document.createElement('h1');
+        h1.textContent = "Halo..";
+
+        document.body.appendChild(h1);
+        // document.body.append(div, h1);
+
+        let counter = 1;
+
+        function tambahKotak()
+        {
+            var color = [ 'tomato', 'greenyellow', 'powderblue', 'green' ];
+
+            // membuat elemen "div"
+            const div = document.createElement('div');
+            
+            // menambahkan id ke elemen div
+            let id = "kotak-" + counter;
+
+            div.id = id;
+            
+            let randomColor = Math.floor(Math.random()*color.length);        
+
+            // menambahkan class ke elemen div
+            div.className = "kotak";
+
+            // menambahkan tulisan ke elemen div
+            div.innerHTML = `<p>Ini Kotak ke-${counter}</p>`;
+
+            const buttonDelete = document.createElement('button');
+
+            let btnId = `btn-delete-${counter}`;
+            buttonDelete.id = btnId;
+            buttonDelete.className = "btn-delete";
+            buttonDelete.textContent = 'Hapus Kotak ke-'+counter;
+
+            console.log(btnId);
+            
+            // menambahkan elemen div ke body
+            document.body.appendChild(div);
+            
+            div.appendChild(buttonDelete);
+
+            console.log(id, randomColor, document.getElementById(id));
+
+            document.getElementById(id).style.backgroundColor = color[randomColor];
+
+            addEventListenerKotak(counter);
+            
+            counter++;
+        }
+
+        function addEventListenerKotak (id) {
+            let btnId = `btn-delete-${id}`;
+            console.log(btnId);
+
+            document.getElementById(btnId).addEventListener('click', (e) => {
+
+                document.getElementById('kotak-'+id).remove();
+
+            });
+
+        }
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>

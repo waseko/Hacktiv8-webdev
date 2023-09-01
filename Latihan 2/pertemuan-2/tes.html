@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat Formulir</title>
+</head>
+<body>
+    <h1>Form Uji coba</h1>
+
+    <form action="" method="POST">
+        <label>Masukkan nama ayang: </label>
+    <input type="text" name="nama" placeholder="Masukkan Nama" /> <br/>
+    
+    <label>Tanggal Lahir: </label>
+    <input type="date" name="tanggal-lahir" /> <br/>
+    
+    <label style="vertical-align: top;">Alamat: </label>
+    <textarea name="alamat" cols="30" rows="5"></textarea> <br/>
+
+    <label>Jenis kelamin: </label>
+    <input type="radio" name="jenis-kelamin" value="a" /> Perempuan 
+    <input type="radio" name="jenis-kelamin" value="b" /> Sangat Perempuan <br/>
+    
+    <label>Skill yang dikuasai: </label>
+    <input type="checkbox" name="skill" value="Menyayangi Akbar" /> Menyayangi Akbar 
+    <input type="checkbox" name="skill" value="Mencintai Akbar" /> Mencintai Akbar 
+    <input type="checkbox" name="skill" value="Bikin Akbar kangen tiap waktu" /> Bikin Akbar kangen tiap waktu 
+    <br/>
+
+    <label>Email: </label>
+    <input type="email" name="email" /> <br/>
+
+    <label>Kesukaan: </label>
+    <select>
+        <option value="" disabled selected>- Pilih Kesukaan -</option>
+        <option value="Indonesia">Akbar</option>
+        <option value="Singapura">Akbar</option>
+        <option value="Australia">Akbar</option>
+        <option value="Amerika Serikat">Akbar</option>
+    </select> <br/>
+
+
+    <label>Pengen punya anak berapa?: </label>
+    <input type="number" name="jumlah-anggota-keluarga" /> <br/>
+
+    <br/>
+    <input type="submit" value="Simpan" />
+    <input type="reset" value="Reset" />
+    </form>
+
+
+
+    
+
+
+
+
+
+</body>
+</html>

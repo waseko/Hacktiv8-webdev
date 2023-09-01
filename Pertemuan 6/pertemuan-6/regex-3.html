@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // let pola = /[abcde]../;
+        let pola = /[a-e]../;
+
+        console.log('pola: /[abcde]../');
+        console.log('abaa', pola.test('abaa'));
+        console.log('fba', pola.test('fba'));
+        console.log('1dd', pola.test('1dd'));
+        console.log('add', pola.test('add'));
+        console.log('belajar', pola.test('belajar'));
+    </script>
+</body>
+</html>

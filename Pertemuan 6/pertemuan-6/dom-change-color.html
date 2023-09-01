@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="bg-color">Warna Latar Belakang: </label>
+    <input id="bg-color" class="namaclass" type="color" onchange="changeBgColor(this);" /> <br/>
+
+    <label for="bg-color">Warna Tulisan: </label>
+    <input type="color" onchange="changeColor(this);" />
+
+    <script>
+
+        // arrow function
+        changeBgColor = (e) => { // function changeBgColor(e) {
+            console.log(e);
+            console.log('id: ' + e.id);
+            console.log('class: ' + e.className);
+            console.log('value / warna (hexa #....): ' + e.value);
+            document.body.style.backgroundColor = e.value;
+        }
+        
+        changeColor = (e) => {
+            document.body.style.color = e.value;
+        }
+
+
+
+    </script>
+
+</body>
+</html>

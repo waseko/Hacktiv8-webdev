@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>membuat List/Daftar</title>
+</head>
+<body>
+    <h1>Membuat List/Daftar</h1>
+
+    <!--
+        List -> Bullets and Numbering
+        1. Ordered list -> punya urutan
+            1.. 2.. 3..
+            a.. b.. c..
+            d.. e.. f..
+            format:
+                <ol>
+                    <li>konten 1</li>
+                    <li>konten 2</li>
+                </ol>
+        2. Un-Ordered list -> tdk punya urutan
+            Biasanya bullet, kotak, panah, dll.
+            format:
+                <ul>
+                    <li>konten 1</li>
+                    <li>konten 2</li>
+                </ul>
+    -->
+
+    <h1>Ordered List default dgn angka</h1>
+    <h2>Yang harus dilakukan hari ini:</h2>
+    <ol>
+        <li>Diam di rumah</li>
+        <li>Belajar Ngoding html</li>
+        <li>Turu</li>
+    </ol>
+
+    <h1>Ordered List dimulai dengan angka tertentu</h1>
+    <h2>Yang harus dilakukan hari ini:</h2>
+    <ol start="22">
+        <li>Diam di rumah</li>
+        <li>Belajar Ngoding html</li>
+        <li>Turu</li>
+    </ol>
+
+    <h1>Ordered List dimulai dengan huruf kecil</h1>
+    <h2>Yang harus dilakukan hari ini:</h2>
+    <ol type="a">
+        <li>Diam di rumah</li>
+        <li>Belajar Ngoding html</li>
+        <li>Turu</li>
+    </ol>
+
+    <h1>Ordered List dimulai dengan huruf kapital</h1>
+    <h2>Yang harus dilakukan hari ini:</h2>
+    <ol type="A">
+        <li>Diam di rumah</li>
+        <li>Belajar Ngoding html</li>
+        <li>Turu</li>
+    </ol>
+
+    <h1>Ordered List dimulai dengan angka romawi kecil</h1>
+    <h2>Yang harus dilakukan hari ini:</h2>
+    <ol type="i">
+        <li>Diam di rumah</li>
+        <li>Belajar Ngoding html</li>
+        <li>Turu</li>
+        <li>Turu lagi</li>
+    </ol>
+
+    <h1>Ordered List dimulai dengan angka romawi besar</h1>
+    <h2>Yang harus dilakukan hari ini:</h2>
+    <ol type="I">
+        <li>Diam di rumah</li>
+        <li>Belajar Ngoding html</li>
+        <li>Turu</li>
+        <li>Turu lagi</li>
+    </ol>
+
+    <h1>Unordered List dimulai dengan lingkaran hitam default</h1>
+    <h2>Yang harus dilakukan hari ini:</h2>
+    <ul>
+        <li>Diam di rumah</li>
+        <li>Belajar Ngoding html</li>
+        <li>Turu</li>
+        <li>Turu lagi</li>
+    </ul>
+
+    <h1>Unordered List dimulai dengan lingkaran warna putih</h1>
+    <h2>Yang harus dilakukan hari ini:</h2>
+    <ul style="list-style-type: circle">
+        <li>Diam di rumah</li>
+        <li>Belajar Ngoding html</li>
+        <li>Turu</li>
+        <li>Turu lagi</li>
+    </ul>
+
+    <h1>Unordered List dimulai dengan kotak hitam</h1>
+    <h2>Yang harus dilakukan hari ini:</h2>
+    <ul style="list-style-type: square">
+        <li>Diam di rumah</li>
+        <li>Belajar Ngoding html</li>
+        <li>Turu</li>
+        <li>Turu lagi</li>
+    </ul>
+
+    <hr>
+    <h1>Nested list/daftar bersarang/list dalam list</h1>
+    <h2>Yang harus dilakukan hari ini</h2>
+    <ol>
+        <li>Diam di rumah
+            <ul>
+                <li>Santai</li>
+                <li>Bersih-Bersih
+                    <ol type="i">
+                        <li>Nyuci baju</li>
+                        <li>Korah-korah</li>
+                        <li>Nyapu</li>
+                        <li>Push-up</li>
+                    </ol>
+                </li>
+                <li>Makan Nasi Madura</li>
+                <li>Binge Watching</li>
+            </ul>
+        </li>
+        <li>Belajar Ngoding html</li>
+        <li>Turu</li>
+    </ol>
+</body>
+</html>
